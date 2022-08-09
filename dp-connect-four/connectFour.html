@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="connectFour.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="Model.js"></script>
+    <script src="View.js"></script>
+    <script src="Controller.js"></script>
+    <script src="FileHandler.js"></script>
+    <title>Connect Four</title>
+</head>
+<body>
+    <h1>Connect Four</h1>
+    <h4 class="tooltip">Help
+        <span class="tooltiptext">You can play by clicking the respective column or enter a number from 0 to 7 in the text box.</span>
+    </h4>
+    
+    <h3 class="player-turn"></h3>
+
+    <div class="game">
+        <table>
+            <tr>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+            </tr>
+            <tr>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+            </tr>
+            <tr>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+            </tr>
+            <tr>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+            </tr>
+            <tr>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+            </tr>
+            <tr>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+            </tr>
+        </table>
+    </div>
+
+    
+    <div class="ControlPannel">
+        <input type="text" id="text-field" class="text-field" value="Enter a column" onclick="value=''">
+        <input type="file" id="file-selector" class="file-selector">
+
+        <div class="undo">Undo</div>
+        <div class="redo">Redo</div>
+        <div class="save">Save</div>
+        <div class="reset">Reset</div>
+    </div>
+
+
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>

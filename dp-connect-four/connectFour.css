@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #faf8ef;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+}
+h1{
+    text-align: center;
+}
+
+h3{
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%);
+    left: 50%;
+    top: 2rem;
+    width: fit-content;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-radius: 0.5em;
+}
+.player-turn{
+    text-align: center;
+    position: relative;
+    top: 2rem;
+
+    z-index: 0;
+}
+
+h4{
+    text-align: center;
+    z-index: 1;
+}
+
+.game, table, tr, td {
+    background-color: rgb(13, 37, 242);
+}
+.game{
+    position: relative;
+    top: 4rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 650px;
+    height: 600px;
+    border: 1px solid black;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.420);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.slot{
+    width: 90px;
+    height: 90px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 50%
+
+}
+
+.undo{
+    position: inherit;
+    top: 0vh;
+    left: 3%;
+    border: 2px solid black;
+    width: 5rem;
+    text-align: center;
+    font-size: 18px;
+    
+}
+.redo{
+    position: inherit;
+    top: 0vh;
+    left: 25%;
+    transform: translate(-50%);
+    border: 2px solid black;
+    width: 5rem;
+    text-align: center;
+    font-size: 18px;
+}
+
+.reset{
+    position: inherit;
+    top: 5vh;
+    left: 3%;
+    border: 2px solid black;
+    width: 5rem;
+    text-align: center;
+    font-size: 18px;
+}
+
+.save{
+    position: inherit;
+    top: 0vh;
+    left: 98%;
+    transform: translate(-100%);
+    border: 2px solid black;
+    width: 5rem;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.file-selector{
+    position: inherit;
+    top: 4vh;
+    left: 98%;
+    transform: translate(-100%);
+    border: 2px solid black;
+    text-align: center;
+    font-size: 18px;
+}
+
+.text-field{
+    position: inherit;
+    top: 0vh;
+    left: 45%;
+    width: 9rem;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.tooltip {
+    position: relative;
+    border-bottom: 1px dotted black;
+    width: 5rem;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: small;
+        
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.undo, .redo, .reset, .save, .file-selector, .text-field {
+    border-radius: 5px;
+    background-color: white;
+}
+
+.ControlPannel {
+    width: 650px;;
+    height: auto;
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    top: 80vh;
+}

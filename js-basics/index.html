@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>hello world</h1>
+    
+    <!-- We put the  java script code at the end of the body, since the server reads the file from top to bottom and if it tries to execute the 
+    js code at the start it causes a bad user experience due to long loading times before they can see anything-->
+    <script>
+        //this is a comment, does not get executed
+        console.log('Hello World');
+    </script>
+
+    <script src="index.js">       
+        //separation of concern -> split html and javascript into separate files and call it by using the src attribute 
+    </script>
+
+
+</body>
+</html>
